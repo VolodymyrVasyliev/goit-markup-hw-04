@@ -100,6 +100,7 @@ img {
   letter-spacing: 0.02em;
   padding-top: 24px;
   padding-bottom: 24px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-link:hover,
@@ -109,6 +110,20 @@ img {
 
 .menu-link:focus {
   color: #404bbf;
+}
+
+.studio {
+  color: #404bbf;
+}
+.studio::after {
+  content: "";
+  display: block;
+  border-radius: 2px;
+  width: 48px;
+  height: 4px;
+  position: absolute;
+  margin-top: 21px;
+  background-color: #404bbf;
 }
 
 .page-contacts {
@@ -125,6 +140,7 @@ img {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.32px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-link:hover,
@@ -140,6 +156,16 @@ img {
 .main-section {
   background: #2e2f42;
   padding: 188px 0;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office/people-office.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+  max-width: 1440px;
 }
 
 .main-title {
@@ -169,14 +195,12 @@ img {
   border: none;
   margin: auto;
   min-width: 169px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button:hover {
-  background: #404bbf;
-}
-
+.button:hover,
 .button:focus {
-  background: #404bbf;
+  background-color: #404bbf;
 }
 
 /* =====advantages===== */
@@ -184,6 +208,19 @@ img {
 .advantages-section {
   padding: 120px 0;
 }
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 264px;
+  height: 112px;
+  border-radius: 4px;
+  border: 1px solid #8e8f99;
+  background: #f4f4fd;
+  margin-bottom: 8px;
+}
+
 .advantages-list {
   display: flex;
   align-items: flex-start;
@@ -249,6 +286,7 @@ img {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .team-item {
@@ -263,7 +301,70 @@ img {
 .name-container {
   padding: 32px 0;
 }
+
+.social-list-team {
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-box-team {
+}
+
+.social-box-team {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background: #4d5ae5;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-box-team:hover,
+.social-box-team:focus {
+  background: #404bbf;
+}
+
 /* =====our portfolio====== */
+
+.overlay-box {
+  position: relative;
+  width: 360px;
+  height: 300px;
+  background-color: #4d5ae5;
+  overflow: hidden;
+}
+
+.overlay {
+  color: #f4f4fd;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 40px 32px;
+  background-color: #4d5ae5;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-item:hover .overlay{
+  
+    transform: translateY(0%);
+}
+.portfolio-item:hover{
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    cursor: pointer;
+}
 
 .portfolio-section {
   padding-top: 120px;
@@ -294,6 +395,7 @@ img {
   width: calc((100% - 48px) / 3);
 }
 
+
 .app-name {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
@@ -318,6 +420,10 @@ img {
 
 /* =====footer===== */
 
+.footer-container {
+  display: flex;
+}
+
 .logo-footer {
   color: #4d5ae5;
   font-family: "Raleway", sans-serif;
@@ -337,6 +443,7 @@ img {
 .footer-section {
   background: #2e2f42;
   padding: 100px 0;
+  display: flex;
 }
 
 .footer-text {
@@ -348,5 +455,44 @@ img {
   max-width: 264px;
 }
 
+.social-footer-container {
+  width: 208px;
+  margin-left: 120px;
+}
 
+.social-text-footer {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+}
 
+.social-list-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-item-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  background: #4d5ae5;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-item-footer:hover,
+.social-item-footer:focus {
+  background-color: #31d0aa;
+}
+
+.footer-social-link {
+  display: flex;
+  justify-content: center;
+}
