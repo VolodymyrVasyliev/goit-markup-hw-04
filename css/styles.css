@@ -100,7 +100,7 @@ img {
   letter-spacing: 0.02em;
   padding-top: 24px;
   padding-bottom: 24px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-link:hover,
@@ -121,8 +121,8 @@ img {
   border-radius: 2px;
   width: 48px;
   height: 4px;
+  bottom: -1px;
   position: absolute;
-  margin-top: 21px;
   background-color: #404bbf;
 }
 
@@ -140,7 +140,7 @@ img {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.32px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-link:hover,
@@ -195,7 +195,7 @@ img {
   border: none;
   margin: auto;
   min-width: 169px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button:hover,
@@ -319,7 +319,7 @@ img {
   align-items: center;
   cursor: pointer;
   background: #4d5ae5;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-box-team:hover,
@@ -484,7 +484,7 @@ img {
   border-radius: 50%;
   cursor: pointer;
   background: #4d5ae5;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-item-footer:hover,
