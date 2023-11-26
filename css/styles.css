@@ -306,7 +306,8 @@ img {
 
 .social-list-team {
   display: flex;
-  justify-content: space-around;
+   justify-content: center;
+   gap: 24px;
 }
 
 .social-box-team {
